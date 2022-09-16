@@ -150,9 +150,9 @@ header {
   padding-top: 44vh;
   height: 92vh;
   text-align: center;
-  background-image: url(../images/bg-intro-mobile.svg);
+  background: url(../images/bg-intro-mobile.svg), var(--white);
   background-repeat: no-repeat;
-  background-size: 100% 46vh;
+  background-size: 100% 46vh, 100%;
   overflow: hidden;
 }
 
@@ -189,4 +189,31 @@ header .request-btn {
     var(--bright-cyan)
   );
   border-radius: 26px;
+}
+
+main .features-container {
+  padding: 60px 5%;
+  text-align: center;
+  background-color: var(--very-light-gray);
+}
+
+.features-container > .title {
+  margin-top: 0;
+  color: var(--dark-blue);
+}
+
+.features-container .paragraph {
+  margin-bottom: 60px;
+}
+
+.features-container .feature-box:not(:last-child) {
+  margin-bottom: 48px;
+}
+
+.feature-box .title {
+  color: var(--dark-blue);
+}
+
+.feature-box .description {
+  margin-bottom: 0;
 }
