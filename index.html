@@ -18,6 +18,14 @@
       href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- resetear los estilos para todos los navegadores -->
     <link rel="stylesheet" href="./css/normalize.css" />
     <!-- mi hoja de estilos -->
@@ -108,65 +116,83 @@
             </p>
           </div>
         </section>
-        <section>
-          <h2>Latest Articles</h2>
-          <article>
+        <section class="articles-container">
+          <h2 class="title">Latest Articles</h2>
+          <article class="article-box">
             <img class="img" src="./images/image-currency.jpg" alt="" />
-            <p>By Claire Robinson</p>
-            <h4>Receive money in any currency with no fees</h4>
-            <p>
-              The world is getting smaller and we’re becoming more mobile. So
-              why should you be forced to only receive money in a single …
-            </p>
+            <div class="text-content">
+              <p class="author">By Claire Robinson</p>
+              <h4 class="title">Receive money in any currency with no fees</h4>
+              <p class="text">
+                The world is getting smaller and we’re becoming more mobile. So
+                why should you be forced to only receive money in a single …
+              </p>
+            </div>
           </article>
-          <article>
+          <article class="article-box">
             <img class="img" src="./images/image-restaurant.jpg" alt="" />
-            <p>By Wilson Hutton</p>
-            <h4>Treat yourself without worrying about money</h4>
-            <p>
-              Our simple budgeting feature allows you to separate out your
-              spending and set realistic limits each month. That means you …
-            </p>
+            <div class="text-content">
+              <p class="author">By Wilson Hutton</p>
+              <h4 class="title">Treat yourself without worrying about money</h4>
+              <p class="text">
+                Our simple budgeting feature allows you to separate out your
+                spending and set realistic limits each month. That means you …
+              </p>
+            </div>
           </article>
-          <article>
+          <article class="article-box">
             <img class="img" src="./images/image-plane.jpg" alt="" />
-            <p>By Wilson Hutton</p>
-            <h4>Take your Easybank card wherever you go</h4>
-            <p>
-              We want you to enjoy your travels. This is why we don’t charge any
-              fees on purchases while you’re abroad. We’ll even show you …
-            </p>
+            <div class="text-content">
+              <p class="author">By Wilson Hutton</p>
+              <h4 class="title">Take your Easybank card wherever you go</h4>
+              <p class="text">
+                We want you to enjoy your travels. This is why we don’t charge
+                any fees on purchases while you’re abroad. We’ll even show you …
+              </p>
+            </div>
           </article>
-          <article>
+          <article class="article-box">
             <img class="img" src="./images/image-confetti.jpg" alt="" />
-            <p>By Claire Robinson</p>
-            <h4>Our invite-only Beta accounts are now live!</h4>
-            <p>
-              After a lot of hard work by the whole team, we’re excited to
-              launch our closed beta. It’s easy to request an invite through the
-              site ...
-            </p>
+            <div class="text-content">
+              <p class="author">By Claire Robinson</p>
+              <h4 class="title">Our invite-only Beta accounts are now live!</h4>
+              <p class="text">
+                After a lot of hard work by the whole team, we’re excited to
+                launch our closed beta. It’s easy to request an invite through
+                the site ...
+              </p>
+            </div>
           </article>
         </section>
       </main>
       <footer>
-        <img src="./images/logo.svg" alt="" />
-        <ul>
-          <li>face</li>
-          <li>youtube</li>
-          <li>twitter</li>
-          <li>pinterest</li>
-          <li>instagram</li>
+        <img src="./images/logo-white.svg" alt="" />
+        <ul class="social-container">
+          <li>
+            <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fa-brands fa-pinterest"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+          </li>
         </ul>
-        <ul>
-          <li>About Us</li>
-          <li>Contact</li>
-          <li>Blog</li>
-          <li>Careers</li>
-          <li>Privacy Policy</li>
+        <ul class="link-list">
+          <li><a href="">About Us</a></li>
+          <li><a href="">Contact</a></li>
+          <li><a href="">Blog</a></li>
+          <li><a href="">Careers</a></li>
+          <li><a href="">Privacy Policy</a></li>
         </ul>
-        <button>Request Invite</button>
-        <p>© Easybank. All Rights Reserved</p>
+        <button class="request-btn">Request Invite</button>
+        <p class="copyright">© Easybank. All Rights Reserved</p>
       </footer>
     </div>
 
@@ -176,7 +202,5 @@
         >Frontend Mentor</a
       >. Coded by <a href="#">Your Name Here</a>.
     </div>
-
-    <div class="prueba"></div>
   </body>
 </html>

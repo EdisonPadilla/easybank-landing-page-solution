@@ -172,6 +172,7 @@ header .text-content {
 .text-content .title {
   margin-top: 0;
   color: var(--dark-blue);
+  font-weight: 400;
 }
 
 .text-content .paragraph {
@@ -200,6 +201,7 @@ main .features-container {
 .features-container > .title {
   margin-top: 0;
   color: var(--dark-blue);
+  font-weight: 400;
 }
 
 .features-container .paragraph {
@@ -212,8 +214,91 @@ main .features-container {
 
 .feature-box .title {
   color: var(--dark-blue);
+  font-weight: 400;
 }
 
 .feature-box .description {
   margin-bottom: 0;
+}
+
+.articles-container {
+  padding: 60px 5%;
+}
+
+.articles-container .article-box {
+  padding-bottom: 40px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 6px 0px var(--light-grayish-blue);
+  overflow: hidden;
+}
+
+.articles-container .article-box:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.article-box .text-content {
+  padding: 0 24px;
+}
+
+.articles-container > .title {
+  margin-top: 0;
+  color: var(--dark-blue);
+  font-weight: 400;
+  text-align: center;
+}
+
+.article-box .author {
+  font-size: 0.6em;
+}
+
+.article-box .title {
+  margin: 12px 0;
+  color: var(--dark-blue);
+  font-weight: 400;
+}
+
+.article-box .text {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+footer {
+  padding: 40px;
+  color: var(--white);
+  text-align: center;
+  background-color: var(--dark-blue);
+}
+
+.social-container {
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.social-container i {
+  font-size: 24px;
+}
+
+.link-list {
+  margin-bottom: 28px;
+  line-height: 2;
+}
+
+footer .request-btn {
+  margin-bottom: 28px;
+  padding: 12px 24px;
+  border: thin solid var(--bright-cyan);
+  background-image: linear-gradient(
+    90deg,
+    var(--lime-green),
+    var(--bright-cyan)
+  );
+  border-radius: 32px;
+}
+
+footer .copyright {
+  margin-top: 0;
+  color: var(--grayish-blue);
 }
