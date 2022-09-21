@@ -20,6 +20,7 @@
 }
 
 button {
+  color: inherit;
   cursor: pointer;
 }
 
@@ -289,6 +290,7 @@ footer {
 footer .request-btn {
   margin-bottom: 28px;
   padding: 12px 24px;
+  font-weight: 700;
   border: thin solid var(--bright-cyan);
   background-image: linear-gradient(
     90deg,
@@ -300,5 +302,6 @@ footer .request-btn {
 
 footer .copyright {
   margin-top: 0;
+  margin-bottom: 0;
   color: var(--grayish-blue);
 }
