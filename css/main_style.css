@@ -406,6 +406,26 @@ footer .copyright {
   }
 
   main .features-container {
-    background-color: #7b8194;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: left;
+    /* background-color: #7b8194; */
+  }
+
+  .features-container .features-box {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+
+  .features-container .paragraph {
+    width: 56%;
+  }
+
+  .features-container .feature-box:not(:last-child) {
+    margin-bottom: 0;
+  }
+
+  .feature-box .description {
   }
 }
