@@ -385,6 +385,18 @@ footer .copyright {
   transform: scale(1);
 }
 
+@media (min-width: 700px) {
+  header .mockups {
+    left: 19%;
+    width: 62%;
+  }
+
+  .articles-container {
+    padding-left: 25%;
+    padding-right: 25%;
+  }
+}
+
 @media (min-width: 1024px) {
   .nav-bar {
     height: 12vh;
@@ -471,6 +483,7 @@ footer .copyright {
   header .mockups {
     top: -12vh;
     left: 8vw;
+    width: 100%;
     height: 112vh;
   }
 
